@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>api-tutorial</title>
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div id="app">
+    <main>
+      <div class="search-box">
+        <input type="text" class="search-bar" placeholder="Search..." onkeypress="apiFetch(event)" />
+      </div>
+
+      <div class="weather-wrap">
+        <div class="location-box">
+          <div class="location">
+            <span id="country-name"></span>
+            <span id="country-code"></span>
+          </div>
+          <div id="date"></div>
+        </div>
+
+        <div class="weather-box">
+          <div id="temp"></div>
+          <div id="weather"></div>
+        </div>
+      </div>
+    </main>
+  </div>
+</body>
+<script src="script.js"></script>
+
+</html>
